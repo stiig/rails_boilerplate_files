@@ -1,0 +1,22 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore tests stuff
+/coverage
+/spec/tmp
+/spec/examples.txt
+
+# Ignore application configuration
+/config/application.yml
+/config/database.yml
+
+/.idea

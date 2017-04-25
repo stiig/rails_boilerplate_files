@@ -1,0 +1,52 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Include:
+    - config.ru
+    - lib/**/*.rake
+    - Rakefile
+  Exclude:
+    - '**/templates/**/*'
+    - '**/vendor/**/*'
+    - bin/**/*
+    - config/**/*
+    - db/**/*
+    - Gemfile
+
+Lint/AssignmentInCondition:
+  Exclude:
+    - 'bin/spring'
+
+Lint/HandleExceptions:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/ModuleLength:
+  Exclude:
+    - "**/*_spec.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "**/*_spec.rb"
+    - "spec/support/**/*.rb"
+    - lib/tasks/auto_annotate_models.rake
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Rails/FilePath:
+  Exclude:
+    - 'config/environments/development.rb'
+
+Rails:
+  Enabled: true
