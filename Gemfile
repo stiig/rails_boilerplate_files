@@ -38,6 +38,7 @@ gem 'sprockets-es6'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
+gem 'whenever', require: false
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -50,7 +51,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'faker'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 3.5', require: false
   gem 'rubocop', require: false
   gem 'webmock', require: false
 end
