@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'pg', '~> 0.18'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 5.1.0'
 
 gem 'active_model_serializers'
 gem 'activeadmin', github: 'activeadmin'
@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'kaminari-i18n'
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.7'
 gem 'rack-attack'
 gem 'ransack'
 gem 'recaptcha', require: 'recaptcha/rails'
@@ -67,7 +67,7 @@ group :development do
   gem 'capistrano-rvm', require: false
   gem 'capistrano-upload-config', require: false
   gem 'capistrano3-puma', require: false
-  gem 'listen', '~> 3.0.5'
+  gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'meta_request'
   gem 'pry-rails'
   gem 'sextant'
@@ -80,6 +80,8 @@ group :development do
 end
 
 group :test do
+  gem 'capybara', '~> 2.13.0'
+  gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'simplecov', require: false
 end
