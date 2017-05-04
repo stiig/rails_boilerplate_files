@@ -70,11 +70,14 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'meta_request'
   gem 'pry-rails'
+  gem 'rails_best_practices', require: false
+  gem 'rubycritic', require: false
   gem 'sextant'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'squasher'
   gem 'sshkit-sudo', require: false
+  gem 'traceroute', require: false
   gem 'web-console', '>= 3.3.0'
   gem 'xray-rails'
 end
