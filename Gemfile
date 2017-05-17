@@ -67,12 +67,12 @@ group :development do
   gem 'capistrano-rvm', require: false
   gem 'capistrano-upload-config', require: false
   gem 'capistrano3-puma', require: false
+  gem 'html2slim'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'meta_request'
   gem 'pry-rails'
   gem 'rails_best_practices', require: false
   gem 'rubycritic', require: false
-  gem 'sextant'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'squasher'

@@ -11,6 +11,7 @@ AllCops:
     - config/**/*
     - db/**/*
     - Gemfile
+    - node_modules/**/* 
 
 Lint/AssignmentInCondition:
   Exclude:
