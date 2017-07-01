@@ -36,6 +36,7 @@ Metrics/ModuleLength:
 Metrics/BlockLength:
   Exclude:
     - "**/*_spec.rb"
+    - "spec/factories/**/*.rb"
     - "spec/support/**/*.rb"
     - lib/tasks/auto_annotate_models.rake
 
