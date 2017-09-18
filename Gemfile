@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.1'
+ruby '2.4.2'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'kaminari'
 gem 'kaminari-i18n'
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.9'
 gem 'rack-attack'
 gem 'ransack'
 gem 'recaptcha', require: 'recaptcha/rails'
@@ -51,7 +51,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'faker'
-  gem 'pry-byebug'
+  gem 'pry-byebug', require: !ENV['RM_INFO']
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.5', require: false
   gem 'rubocop', require: false
