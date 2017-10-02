@@ -39,7 +39,7 @@ gem 'slim-rails'
 gem 'sprockets-es6'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
-gem 'webpacker', '~> 2.0' # git: 'https://github.com/rails/webpacker.git'
+gem 'webpacker', '~> 3.0' # git: 'https://github.com/rails/webpacker.git'
 gem 'whenever', require: false
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
