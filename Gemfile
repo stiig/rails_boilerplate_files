@@ -50,7 +50,7 @@ group :development, :test do
   gem 'awesome_print'
   gem 'brakeman', require: false
   gem 'database_cleaner'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'faker'
   gem 'pry-byebug', require: !ENV['RM_INFO']
   gem 'pry-rails'
